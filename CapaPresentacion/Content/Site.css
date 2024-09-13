@@ -1,20 +1,242 @@
-﻿/* Set padding to keep content from hitting the edges */
-.body-content {
-    margin-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+﻿@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,700,500");
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --font-size-l: 36px;
+    --font-size-m: 24px;
+    --font-size-s: 20px;
+    --font-size-xs: 16px;
+    --font-family-inter: "Inter", Helvetica;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.inter-medium-white-16px {
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 500;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+
+/* The following line is used to measure usage of this code in production. For more info see our usage billing page */
+.screen a {
+    display: contents;
+    text-decoration: none;
 }
+
+.container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+}
+
+    .container-center-horizontal > * {
+        flex-shrink: 0;
+        pointer-events: auto;
+    }
+
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.valign-text-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* screen - home */
+
+.home {
+    align-items: center;
+    background-color: var(--white);
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    height: 1024px;
+    width: 1440px;
+}
+
+    .header {
+        align-items: center;
+        background-color: var(--black);
+        display: flex;
+        height: 121px;
+        min-width: 1440px;
+        padding: 25px 129px;
+    }
+
+    .header .logo {
+        align-self: flex-start;
+        background-image: url(../Recursos/img/logo@2x.png);
+        background-position: 50% 50%;
+        background-size: cover;
+        height: 70px;
+        width: 65px;
+    }
+
+    .header .botn-2 {
+        align-items: flex-start;
+        display: flex;
+        margin-left: 737px;
+        min-width: 45px;
+    }
+
+        .header .botn-3,
+        .header .botn-4,
+        .header .botn-5,
+        .header .botn-6 {
+            height: 19px;
+            letter-spacing: 0;
+            line-height: normal;
+            margin-top: -1px;
+            min-width: 45px;
+            text-align: center;
+        }
+
+    .botn-1 {
+        align-items: flex-start;
+        display: flex;
+        margin-left: 112px;
+        min-width: 45px;
+    }
+
+    .texto-principal {
+        align-items: flex-start;
+        display: flex;
+        margin-top: 119px;
+        min-width: 262px;
+    }
+
+    .title {
+        color: #f5b300;
+        font-family: var(--font-family-inter);
+        font-size: var(--font-size-l);
+        font-weight: 700;
+        height: 44px;
+        letter-spacing: 0;
+        line-height: normal;
+        margin-top: -1px;
+        min-width: 262px;
+        text-align: center;
+    }
+
+    .texto-secundario-tex-home {
+        align-items: flex-start;
+        display: flex;
+        height: 64px;
+        margin-left: 2.0px;
+        margin-top: 17px;
+        min-width: 794px;
+    }
+
+    .texto-secundario-tex-texto-secundario-tex {
+        color: #7d7d7d;
+        font-family: var(--font-family-inter);
+        font-size: var(--font-size-m);
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 32.2px;
+        margin-top: -1px;
+        text-align: center;
+        width: 794px;
+    }
+
+    .componente-informativo {
+        align-items: center;
+        background-color: #f5b300;
+        border-radius: 20px;
+        box-shadow: 0px 4px 20px #a07500;
+        display: flex;
+        gap: 175px;
+        height: 301px;
+        margin-top: 77px;
+        min-width: 1182px;
+        padding: 59px 278px;
+    }
+
+    .caritas-negras {
+        align-self: flex-end;
+        height: 182px;
+        object-fit: cover;
+        width: 182px;
+    }
+
+    .flex-col {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 13.0px;
+        min-height: 148px;
+        width: 266px;
+    }
+
+    .texto-sobre-otro-elemento-flex-col {
+        align-items: flex-start;
+        display: flex;
+        min-width: 266px;
+    }
+
+    .texto-sobre-otro-elemento-texto-sobre-otro-elemento {
+        color: var(--black);
+        font-family: var(--font-family-inter);
+        font-size: var(--font-size-l);
+        font-weight: 700;
+        height: 88px;
+        letter-spacing: 0;
+        line-height: normal;
+        margin-top: -1px;
+        width: 266px;
+    }
+
+    .home .botn-7 {
+        align-items: flex-start;
+        background-color: var(--black);
+        border-radius: 10px;
+        display: flex;
+        height: 35px;
+        min-width: 266px;
+        padding: 5px 97.8px;
+    }
+
+    .botn-8 {
+        color: var(--white);
+        font-family: var(--font-family-inter);
+        font-size: var(--font-size-s);
+        font-weight: 500;
+        height: 24px;
+        letter-spacing: 0;
+        line-height: normal;
+        text-align: center;
+        width: 70px;
+    }
+
+    .footer {
+        align-items: center;
+        background-color: var(--black);
+        display: flex;
+        height: 47px;
+        justify-content: flex-end;
+        margin-top: 234px;
+        min-width: 1440px;
+        padding: 0 697px;
+    }
+
+    .footer .botn-9 {
+        align-items: flex-start;
+        display: flex;
+        min-width: 45px;
+    }
+
