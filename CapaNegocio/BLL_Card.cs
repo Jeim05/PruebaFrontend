@@ -11,7 +11,7 @@ namespace CapaNegocio
 {
     public class BLL_Card
     {
-        private BLL_Card objCapaDatos = new BLL_Card();
+        private DAL_Card objCapaDatos = new DAL_Card();
 
         public List<Card> ObtenerCards()
         {

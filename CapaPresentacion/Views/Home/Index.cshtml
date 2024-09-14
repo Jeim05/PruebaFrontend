@@ -1,14 +1,14 @@
-﻿
+﻿@model CapaEntidad.Card
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <main>
-    <div class="texto-principal"><h1 class="title valign-text-bottom">Texto principal</h1></div>
+    <div class="texto-principal"><h1 class="title valign-text-bottom">@Model.TituloPrincipal</h1></div>
     <div class="texto-secundario-tex-home">
         <p class="texto-secundario-tex-texto-secundario-tex">
-            Texto secundario texto secundario texto secundario texto secundario texto secundario texto secundario
+            @Model.SubTitulo
         </p>
     </div>
     <div class="componente-informativo">
@@ -16,7 +16,7 @@
         <div class="flex-col">
             <div class="texto-sobre-otro-elemento-flex-col">
                 <div class="texto-sobre-otro-elemento-texto-sobre-otro-elemento valign-text-middle">
-                    Texto sobre otro elemento
+                    @Model.TextoCardInformativo
                 </div>
             </div>
             <div class="botn-7"><div class="botn-8 valign-text-middle">botón</div></div>

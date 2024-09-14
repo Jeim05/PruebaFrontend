@@ -12,7 +12,8 @@ namespace CapaPresentacion.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            Card card = new BLL_Card().ObtenerCards().FirstOrDefault();
+            return View(card);
         }
 
         [HttpGet]
