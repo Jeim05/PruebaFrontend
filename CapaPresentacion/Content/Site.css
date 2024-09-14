@@ -68,14 +68,14 @@
     width: 1440px;
 }
 
-    .header {
-        align-items: center;
-        background-color: var(--black);
-        display: flex;
-        height: 121px;
-        min-width: 1440px;
-        padding: 25px 129px;
-    }
+.header {
+    align-items: center;
+    background-color: var(--black);
+    display: flex;
+    height: 121px;
+    min-width: 1440px;
+    padding: 25px 129px;
+}
 
     .header .logo {
         align-self: flex-start;
@@ -93,148 +93,158 @@
         min-width: 45px;
     }
 
-        .header .botn-3,
-        .header .botn-4,
-        .header .botn-5,
-        .header .botn-6 {
-            height: 19px;
-            letter-spacing: 0;
-            line-height: normal;
-            margin-top: -1px;
-            min-width: 45px;
-            text-align: center;
-        }
-
-    .botn-1 {
-        align-items: flex-start;
-        display: flex;
-        margin-left: 112px;
+    .header .botn-3,
+    .header .botn-4,
+    .header .botn-5,
+    .header .botn-6 {
+        height: 19px;
+        letter-spacing: 0;
+        line-height: normal;
+        margin-top: -1px;
         min-width: 45px;
-    }
-
-    .texto-principal {
-        align-items: flex-start;
-        display: flex;
-        margin-top: 119px;
-        min-width: 262px;
-        justify-content:center;
-    }
-
-    .title {
-        color: #f5b300;
-        font-family: var(--font-family-inter);
-        font-size: var(--font-size-l);
-        font-weight: 700;
-        height: 44px;
-        letter-spacing: 0;
-        line-height: normal;
-        margin-top: -1px;
-        min-width: 262px;
         text-align: center;
     }
 
-    .texto-secundario-tex-home {
-        align-items: flex-start;
-        display: flex;
-        height: 64px;
-        margin-left: 2.0px;
-        margin-top: 17px;
-        min-width: 794px;
-        justify-content:center;
-    }
+.home .menu-responsive {
+    display: flex;
+    align-items: center;
+}
 
-    .texto-secundario-tex-texto-secundario-tex {
-        color: #7d7d7d;
-        font-family: var(--font-family-inter);
-        font-size: var(--font-size-m);
-        font-weight: 400;
-        letter-spacing: 0;
-        line-height: 32.2px;
-        margin-top: -1px;
-        text-align: center;
-        width: 794px;
-    }
+.menu-hamburguesa {
+    display: none;
+}
 
-    .componente-informativo {
-        align-items: center;
-        background-color: #f5b300;
-        border-radius: 20px;
-        box-shadow: 0px 4px 20px #a07500;
-        display: flex;
-        gap: 175px;
-        height: 301px;
-        margin-top: 77px;
-        min-width: 1182px;
-        padding: 59px 278px;
-    }
 
-    .caritas-negras {
-        align-self: flex-end;
-        height: 182px;
-        object-fit: cover;
-        width: 182px;
-    }
+.botn-1 {
+    align-items: flex-start;
+    display: flex;
+    margin-left: 112px;
+    min-width: 45px;
+}
 
-    .flex-col {
-        align-items: flex-start;
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        margin-bottom: 13.0px;
-        min-height: 148px;
-        width: 266px;
-    }
+.texto-principal {
+    align-items: flex-start;
+    display: flex;
+    margin-top: 119px;
+    min-width: 262px;
+    justify-content: center;
+}
 
-    .texto-sobre-otro-elemento-flex-col {
-        align-items: flex-start;
-        display: flex;
-        min-width: 266px;
-    }
+.title {
+    color: #f5b300;
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-l);
+    font-weight: 700;
+    height: 44px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    min-width: 262px;
+    text-align: center;
+}
 
-    .texto-sobre-otro-elemento-texto-sobre-otro-elemento {
-        color: var(--black);
-        font-family: var(--font-family-inter);
-        font-size: var(--font-size-l);
-        font-weight: 700;
-        height: 88px;
-        letter-spacing: 0;
-        line-height: normal;
-        margin-top: -1px;
-        width: 266px;
-    }
+.texto-secundario-tex-home {
+    align-items: flex-start;
+    display: flex;
+    height: 64px;
+    margin-left: 2.0px;
+    margin-top: 17px;
+    min-width: 794px;
+    justify-content: center;
+}
 
-    .home .botn-7 {
-        align-items: flex-start;
-        background-color: var(--black);
-        border-radius: 10px;
-        display: flex;
-        height: 35px;
-        min-width: 266px;
-        padding: 5px 97.8px;
-    }
+.texto-secundario-tex-texto-secundario-tex {
+    color: #7d7d7d;
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 32.2px;
+    margin-top: -1px;
+    text-align: center;
+    width: 794px;
+}
 
-    .botn-8 {
-        color: var(--white);
-        font-family: var(--font-family-inter);
-        font-size: var(--font-size-s);
-        font-weight: 500;
-        height: 24px;
-        letter-spacing: 0;
-        line-height: normal;
-        text-align: center;
-        width: 70px;
-    }
+.componente-informativo {
+    align-items: center;
+    background-color: #f5b300;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px #a07500;
+    display: flex;
+    gap: 175px;
+    height: 301px;
+    margin-top: 77px;
+    min-width: 1182px;
+    padding: 59px 278px;
+}
 
-    .footer {
-        align-items: center;
-        background-color: var(--black);
-        display: flex;
-        height: 47px;
-        justify-content: flex-end;
-        margin-top: 234px;
-        min-width: 1440px;
-        padding: 0 697px;
-    }
+.caritas-negras {
+    align-self: flex-end;
+    height: 182px;
+    object-fit: cover;
+    width: 182px;
+}
+
+.flex-col {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 13.0px;
+    min-height: 148px;
+    width: 266px;
+}
+
+.texto-sobre-otro-elemento-flex-col {
+    align-items: flex-start;
+    display: flex;
+    min-width: 266px;
+}
+
+.texto-sobre-otro-elemento-texto-sobre-otro-elemento {
+    color: var(--black);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-l);
+    font-weight: 700;
+    height: 88px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    width: 266px;
+}
+
+.home .botn-7 {
+    align-items: flex-start;
+    background-color: var(--black);
+    border-radius: 10px;
+    display: flex;
+    height: 35px;
+    min-width: 266px;
+    padding: 5px 97.8px;
+}
+
+.botn-8 {
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-s);
+    font-weight: 500;
+    height: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center;
+    width: 70px;
+}
+
+.footer {
+    align-items: center;
+    background-color: var(--black);
+    display: flex;
+    height: 47px;
+    justify-content: flex-end;
+    margin-top: 234px;
+    min-width: 1440px;
+    padding: 0 697px;
+}
 
     .footer .botn-9 {
         align-items: flex-start;
@@ -242,3 +252,293 @@
         min-width: 45px;
     }
 
+@media screen and (min-width:801px) and (max-width:1024px) {
+    .home {
+        height: 100% !important;
+        width: 100%;
+    }
+
+        .home .logo {
+            min-width: 80px;
+            min-height: 80px;
+        }
+
+        .home .header {
+            min-width: auto !important;
+            width: 100%;
+        }
+
+        .home .botn-2 {
+            margin-left: 150px;
+        }
+
+        .home .componente {
+            min-width: auto;
+        }
+
+        .home .componente-informativo {
+            display: flex;
+            flex-direction: row;
+            padding: 59px 120px;
+            min-width: auto;
+            height: 250px;
+            gap: 150px;
+            width: 90% !important;
+        }
+
+        .home .caritas-negras {
+            min-height: 80px;
+            min-width: 185px;
+        }
+
+        .home .flex-col {
+            width: auto !important;
+            float: right;
+        }
+
+        .home .texto-sobre-otro-elemento-flex-col {
+            min-width: auto !important;
+        }
+
+        .home .botn-7 {
+            min-width: auto;
+            padding: 5px 50px;
+        }
+
+        .home .footer {
+            position: absolute;
+            justify-content: center;
+            min-width: auto;
+            padding: 0 0;
+            margin-top: 100px;
+            bottom: 0;
+            width: 100%
+        }
+}
+
+@media screen and (min-width:481px) and (max-width:800px) {
+    .home .header {
+        min-width: auto !important;
+        width: 100%;
+        height: auto;
+        padding-left: 50px;
+    }
+
+    .home .botn-2 {
+        margin-left: 0;
+    }
+
+    .home .logo {
+        min-width: 70px;
+        min-height: 80px;
+        height: 60px;
+        width: 50px;
+    }
+
+    .home .menu-responsive {
+        display: none;
+    }
+
+    .home .texto-secundario-tex-home {
+        min-width: auto !important;
+    }
+
+    .texto-secundario-tex-texto-secundario-tex {
+        width: auto !important;
+    }
+
+    .home .componente {
+        min-width: auto;
+    }
+
+    .home .componente-informativo {
+        display: flex;
+        flex-direction: row;
+        padding: 59px 60px;
+        min-width: auto;
+        height: 250px;
+        gap: 80px;
+        width: 90% !important;
+    }
+
+    .home .caritas-negras {
+        min-height: 122px;
+        min-width: 85px;
+        width: 30%;
+        height: auto;
+        align-self: auto;
+    }
+
+    .home .flex-col {
+        width: auto !important;
+    }
+
+    .home .texto-sobre-otro-elemento-flex-col {
+        min-width: auto !important;
+    }
+
+    .home .botn-7 {
+        min-width: auto;
+        padding: 5px 50px;
+    }
+
+    .home .footer {
+        position: absolute;
+        display: flex;
+        bottom: 0;
+        justify-content: center;
+        min-width: auto;
+        padding: 0;
+        margin-top: 250px;
+        width: 100%
+    }
+}
+
+@media screen and (max-width:480px) {
+    .home .header {
+        min-width: auto !important;
+        width: 100%;
+        padding: 25px 35px;
+        position: fixed;
+    }
+
+    .home .menu-responsive {
+        position: fixed;
+        top: 120px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        margin-left: -100%;
+    }
+
+        .home .menu-responsive.show {
+            margin-left: 0;
+        }
+
+    .home .menu-hamburguesa {
+        width: 100%;
+        height: 40px;
+        border: none;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        float: right;
+        z-index: 200;
+        left: 100% !important;
+    }
+
+        .home .menu-hamburguesa span {
+            width: 37px;
+            height: 4px;
+            margin-bottom: 5px;
+            position: relative;
+            background: #ffff;
+            border-radius: 3px;
+            transform-origin: 4px 0px;
+            transition: all .2s linear;
+        }
+
+        .home .menu-hamburguesa.close span {
+            opacity: 1;
+            transform: rotate(45deg) translate(0px, 0px);
+            background: #ffffff;
+        }
+
+            .home .menu-hamburguesa.close span:nth-child(2) {
+                transform: rotate(-45deg) translate(-8px, 5px);
+            }
+
+            .home .menu-hamburguesa.close span:nth-child(3) {
+                display: none;
+            }
+
+    .home .botn {
+        height: 40px;
+        text-align: center;
+    }
+
+    .home .botn-2 {
+        margin-top: 20px;
+        margin-left: 112px;
+    }
+
+    .home .logo {
+        min-width: 70px;
+        min-height: 80px;
+        height: 60px;
+        width: 50px;
+    }
+
+    .home .texto-principal {
+        margin-top: 150px;
+    }
+
+    .home .texto-secundario-tex-home {
+        min-width: auto !important;
+        margin-bottom: 40px;
+    }
+
+    .texto-secundario-tex-texto-secundario-tex {
+        width: auto !important;
+    }
+
+    .home .componente {
+        min-width: auto;
+    }
+
+    .home .componente-informativo {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 59px 60px;
+        min-width: auto;
+        gap: 80px;
+        width: 90% !important;
+        height: auto;
+        justify-content: center;
+    }
+
+    .home .caritas-negras {
+        min-height: 122px;
+        min-width: 85px;
+        height: auto;
+        align-self: auto;
+    }
+
+    .home .flex-col {
+        width: auto !important;
+    }
+
+    .home .texto-sobre-otro-elemento-flex-col {
+        min-width: auto !important;
+    }
+
+    .home .botn-7 {
+        min-width: auto;
+        padding: 5px 90px;
+    }
+
+
+    .home .footer {
+        position: relative;
+        bottom: 0;
+        justify-content: center;
+        min-width: auto;
+        padding: 10px 0;
+        margin-top: 100px;
+    }
+
+    .home .botn-6 {
+        visibility: hidden;
+    }
+
+        .home .botn-6::after {
+            content: "footer";
+            visibility: visible;
+            padding-bottom: 10px;
+        }
+}
