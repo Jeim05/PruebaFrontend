@@ -132,6 +132,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Recursos\img\caritas-negras%402x.png" />
     <Content Include="Recursos\img\logo%402x.png" />
+    <Content Include="Scripts\menu.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
