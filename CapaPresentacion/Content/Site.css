@@ -259,6 +259,38 @@
     font-size: 20px
 }
 
+
+/***********************************/
+.container-tabla{
+  padding: 20px 10px;
+  margin: 10px 5px;
+}
+
+.tabla {
+  margin: 0 auto;
+  padding: 0;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid #7d7d7d;
+  width: 80%;
+}
+
+.tabla thead{
+  background-color: #f5b300;
+  font-weight: bold;
+}
+
+.tabla tr{
+  border: 1px solid #7d7d7d;
+}
+
+.tabla th, .tabla td{
+  padding: 10px;
+  text-align: center;
+}
+
+/***********************************/
+
 @media screen and (max-width: 1024px) {
     .home {
         height: 100% !important;
