@@ -1,40 +1,39 @@
 ﻿using CapaEntidad;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace CapaDatos
 {
-    public class DAL_Card
+    public class DAL_Articulo
     {
-        public List<Card> ObtenerCards()
+        public List<Articulo> ObtenerArticulos()
         {
-            List<Card> lista = new List<Card>();
+            List<Articulo> lista = new List<Articulo>();
 
             try
             {
                 using (SqlConnection oConexion = new SqlConnection(Conexion.conexion))
                 {
-                    string query = "SELECT IdCard, TituloPrincipal, SubTitulo, TextoCardInformativo FROM CARD";
+                    string query = "SELECT IdArticulo, Titulo, Descripcion FROM ARTICULO";
                     SqlCommand cmd = new SqlCommand(query, oConexion);
                     cmd.CommandType = CommandType.Text;
                     oConexion.Open();
 
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {
-                        while (reader.Read()) {
+                        while (reader.Read())
+                        {
                             lista.Add(
-                                new Card()
+                                new Articulo()
                                 {
-                                    IdCard = Convert.ToInt32(reader["IdCard"]),
-                                    TituloPrincipal = reader["TituloPrincipal"].ToString(),
-                                    SubTitulo = reader["Subtitulo"].ToString(),
-                                    TextoCardInformativo = reader["TextoCardInformativo"].ToString(),
+                                    IdArticulo = Convert.ToInt32(reader["IdArticulo"]),
+                                    Titulo = reader["Titulo"].ToString(),
+                                    Descripcion = reader["Descripcion"].ToString(),
                                 });
                         }
                     }
@@ -42,11 +41,10 @@ namespace CapaDatos
             }
             catch (Exception)
             {
-                lista = new List<Card>();
-                
+                lista = new List<Articulo>();
+
             }
             return lista;
         }
-
     }
 }

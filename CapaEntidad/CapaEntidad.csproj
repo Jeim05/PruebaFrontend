@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Articulo.cs" />
     <Compile Include="Card.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
