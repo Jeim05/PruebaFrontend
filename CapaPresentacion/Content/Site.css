@@ -58,19 +58,21 @@
     display: flex;
     flex-direction: column;
     height: 1024px;
-    width: 1440px;
+    width: 100%;
 }
 
-.header {
-    align-items: center;
-    background-color: var(--black);
-    display: flex;
-    height: 121px;
-    min-width: 1440px;
-    padding: 25px 129px;
-}
+    .home .header {
+        align-items: center;
+        background-color: var(--black);
+        display: flex;
+        height: 121px;
+        width: 100%;
+        padding: 25px 90px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
 
-    .header .logo {
+    .home .logo {
         align-self: flex-start;
         background-image: url(../Recursos/img/logo@2x.png);
         background-position: 50% 50%;
@@ -79,17 +81,16 @@
         width: 65px;
     }
 
-    .header .botn-2 {
+    .home .botn-2 {
         align-items: flex-start;
         display: flex;
-        margin-left: 737px;
         min-width: 45px;
     }
 
-    .header .botn-3,
-    .header .botn-4,
-    .header .botn-5,
-    .header .botn-6 {
+    .home .botn-3,
+    .home .botn-4,
+    .home .botn-5,
+    .home .botn-6 {
         height: 19px;
         letter-spacing: 0;
         line-height: normal;
@@ -98,24 +99,24 @@
         text-align: center;
     }
 
-.home .menu-responsive {
-    display: flex;
-    align-items: center;
-}
+    .home .botn-1 {
+        align-items: flex-start;
+        display: flex;
+        margin-left: 112px;
+        min-width: 45px;
+    }
+
+    /* MENU RESPONSIVE */
+    .home .menu-responsive {
+        display: flex;
+        gap: 20px;
+    }
 
 .menu-hamburguesa {
     display: none;
 }
 
-
-.botn-1 {
-    align-items: flex-start;
-    display: flex;
-    margin-left: 112px;
-    min-width: 45px;
-}
-
-.texto-principal {
+.home .texto-principal {
     align-items: flex-start;
     display: flex;
     margin-top: 119px;
@@ -123,7 +124,7 @@
     justify-content: center;
 }
 
-.title {
+.home .title {
     color: #f5b300;
     font-family: var(--font-family-inter);
     font-size: var(--font-size-l);
@@ -136,7 +137,7 @@
     text-align: center;
 }
 
-.texto-secundario-tex-home {
+.home .texto-secundario-tex-home {
     align-items: flex-start;
     display: flex;
     height: 64px;
@@ -146,7 +147,7 @@
     justify-content: center;
 }
 
-.texto-secundario-tex-texto-secundario-tex {
+.home .texto-secundario-tex-texto-secundario-tex {
     color: #7d7d7d;
     font-family: var(--font-family-inter);
     font-size: var(--font-size-m);
@@ -158,7 +159,7 @@
     width: 794px;
 }
 
-.componente-informativo {
+.home .componente-informativo {
     align-items: center;
     background-color: #f5b300;
     border-radius: 20px;
@@ -167,18 +168,17 @@
     gap: 175px;
     height: 301px;
     margin-top: 77px;
-    min-width: 1182px;
-    padding: 59px 278px;
+    padding: 59px 58px;
 }
 
-.caritas-negras {
+.home .caritas-negras {
     align-self: flex-end;
     height: 182px;
     object-fit: cover;
     width: 182px;
 }
 
-.flex-col {
+.home .flex-col {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -188,13 +188,13 @@
     width: 266px;
 }
 
-.texto-sobre-otro-elemento-flex-col {
+.home .texto-sobre-otro-elemento-flex-col {
     align-items: flex-start;
     display: flex;
     min-width: 266px;
 }
 
-.texto-sobre-otro-elemento-texto-sobre-otro-elemento {
+.home .texto-sobre-otro-elemento-texto-sobre-otro-elemento {
     color: var(--black);
     font-family: var(--font-family-inter);
     font-size: var(--font-size-l);
@@ -216,7 +216,7 @@
     padding: 5px 97.8px;
 }
 
-.botn-8 {
+.home .botn-8 {
     color: var(--white);
     font-family: var(--font-family-inter);
     font-size: var(--font-size-s);
@@ -228,20 +228,139 @@
     width: 70px;
 }
 
-.footer {
+.home .footer {
     align-items: center;
     background-color: var(--black);
     display: flex;
     height: 47px;
-    justify-content: flex-end;
+    justify-content: center;
     margin-top: 234px;
-    min-width: 1440px;
-    padding: 0 697px;
+    width: 100%;
 }
 
-    .footer .botn-9 {
-        align-items: flex-start;
-        display: flex;
-        min-width: 45px;
+.home .botn-9 {
+    align-items: flex-start;
+    display: flex;
+    min-width: 45px;
+}
+
+@media screen and (max-width: 1024px) {
+    .home {
+        height: 100% !important;
+        width: 100%;
     }
 
+        .home .menu-responsive {
+            display: none;
+        }
+
+        .home .componente-informativo {
+            padding: 25px 20px;
+            min-width: auto;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+}
+
+@media screen and (max-width: 800px) {
+    .home .componente-informativo {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        gap: 20px;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        height: auto;
+    }
+
+    .home .texto-secundario-tex-home {
+        min-width: auto;
+    }
+
+    .home .texto-secundario-tex-texto-secundario-tex {
+        width: auto;
+        font-size: 20px;
+        display: flex;
+    }
+
+    .home .header {
+        padding: 25px 75px;
+    }
+
+    .home .caritas-negras{
+        align-self: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home .componente-informativo {
+        padding: 10px 15px;
+    }
+
+    .home .header {
+        padding: 10px 15px;
+    }
+
+    .home .botn-1 {
+        margin-left: 0;
+    }
+
+    .home .menu-responsive {
+        position: fixed;
+        top: 120px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        margin-left: -100%;
+        padding: 5px 25px;
+    }
+
+        .home .menu-responsive.show {
+            margin-left: 0;
+        }
+
+    .home .menu-hamburguesa {
+        width: 100%;
+        height: 40px;
+        border: none;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        float: right;
+        z-index: 200;
+        left: 100% !important;
+        justify-content: center;
+        align-content: center;
+    }
+
+        .home .menu-hamburguesa span {
+            width: 37px;
+            height: 4px;
+            margin-bottom: 5px;
+            position: relative;
+            background: #ffff;
+            border-radius: 3px;
+            transform-origin: 4px 0px;
+            transition: all .2s linear;
+        }
+
+        .home .menu-hamburguesa.close span {
+            opacity: 1;
+            transform: rotate(45deg) translate(0px, 0px);
+            background: #ffffff;
+        }
+
+            .home .menu-hamburguesa.close span:nth-child(2) {
+                transform: rotate(-45deg) translate(-8px, 5px);
+            }
+
+            .home .menu-hamburguesa.close span:nth-child(3) {
+                display: none;
+            }
+}
