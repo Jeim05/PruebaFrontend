@@ -15,15 +15,5 @@ namespace CapaPresentacion.Controllers
             Card card = new BLL_Card().ObtenerCards().FirstOrDefault();
             return View(card);
         }
-
-        [HttpGet]
-        public JsonResult ObtenerDatos()
-        {
-            List<Card> list = new List<Card>();
-            list = new BLL_Card().ObtenerCards();
-
-            return Json(new {data = list}, JsonRequestBehavior.AllowGet);
-        }
-
     }
 }
