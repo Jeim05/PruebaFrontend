@@ -23,7 +23,29 @@
 
 @section scripts{
     <script>
-        
+        $("#document").ready(function () {
+            jQuery.ajax({
+                url: '@Url.Action("ObtenerArticulos", "Articulos")',
+                type: "GET",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    var articulos = data.data;
+                    var tabla = $("#tabla tbody");
+                    tabla.empty(); 
+
+                    $.each(articulos, function (index, item) {
+                        tabla.append(
+                            '<tr>' +
+                            '<td>' + item.Titulo + '</td>' + // Usamos Nombre como Titulo
+                            '<td>' + item.Descripcion + '</td>' + // Descripción del artículo
+                            '</tr>'
+                        )
+                    })
+                }
+            });
+        })
+
     </script>
 }
 

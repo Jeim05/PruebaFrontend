@@ -133,6 +133,11 @@
     <Content Include="Content\Site.css" />
     <Content Include="Recursos\img\caritas-negras%402x.png" />
     <Content Include="Recursos\img\logo%402x.png" />
+    <None Include="Scripts\jquery-3.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.7.1.js" />
+    <Content Include="Scripts\jquery-3.7.1.min.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.js" />
     <Content Include="Scripts\menu.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
@@ -155,6 +160,8 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\Articulos\Index.cshtml" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.7.1.min.map" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">

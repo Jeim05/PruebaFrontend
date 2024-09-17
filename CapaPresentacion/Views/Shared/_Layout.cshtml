@@ -9,7 +9,7 @@
     @Styles.Render("~/Content/css")
     
 </head>
-<body >
+<body>
     <div class="container-center-horizontal">
         <div class="home screen">
             <header class="header">
@@ -39,7 +39,9 @@
     </div>
 
     @Scripts.Render("~/bundles/js")
-   
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+
 </body>
 
 
