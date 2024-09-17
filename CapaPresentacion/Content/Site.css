@@ -48,6 +48,10 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
+
 
 /* screen - home */
 
@@ -105,6 +109,14 @@
         margin-left: 112px;
         min-width: 45px;
     }
+
+    .home .item-nav{
+        color: white;
+    }
+
+        .home .item-nav:hover {
+            color: #f5b300;
+        }
 
     /* MENU RESPONSIVE */
     .home .menu-responsive {
@@ -246,14 +258,14 @@
 
 
 /***********************************/
-.container-tabla{
-  padding: 20px 10px;
-  margin: 10px 8px;
+.container-table {
+    padding: 20px 10px;
+    margin: 10px 8px;
 }
 
 .tabla {
   margin: 0 auto;
-  padding: 0;
+  padding: 10px;
   table-layout: fixed;
   border-collapse: collapse;
   border: 1px solid #7d7d7d;
